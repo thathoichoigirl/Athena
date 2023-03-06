@@ -21,10 +21,10 @@ export default function Navbar() {
         {!user && (
           <>
             <li>
-              <Link to="/login">Login</Link>
+              <Link to="/login">LOG IN</Link>
             </li>
             <li>
-              <Link to="/signup">Signup</Link>
+              <Link to="/signup">SIGN UP</Link>
             </li>
           </>
         )}
@@ -33,12 +33,12 @@ export default function Navbar() {
           <li>
             {!isPending && (
               <button className="btn" onClick={logout}>
-                Logout
+                LOG OUT
               </button>
             )}
             {isPending && (
               <button className="btn" disabled>
-                Logging out...
+                Logging Out...
               </button>
             )}
           </li>

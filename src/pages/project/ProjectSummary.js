@@ -8,8 +8,6 @@ export default function ProjectSummary({ project }) {
   const { user } = useAuthContext();
   const history = useHistory();
 
-  console.log(project.details);
-  console.log('Here');
   const handleClick = () => {
     deleteDocument(project.id);
     history.push('/');
